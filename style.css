@@ -2020,24 +2020,21 @@ body {
 
 }
 
+
   /* ═════════════════════════════
    FOOTER
 ═════════════════════════════ */
-
 .footer {
     position: relative;
-
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            180deg,
-            var(--rose) 0%,
-            #241612 100%
-        );
+    background: linear-gradient(
+        180deg,
+        var(--rose) 0%,
+        #241612 100%
+    );
 
-    padding:
-        110px 70px 35px;
+    padding: 110px 70px 35px;
 
     color: white;
 }
@@ -2047,15 +2044,13 @@ body {
 
 .footer-blur {
     position: absolute;
-
     width: 550px;
     height: 550px;
 
-    background:
-        radial-gradient(
-            rgba(255, 194, 231, 0.15),
-            transparent 70%
-        );
+    background: radial-gradient(
+        rgba(255, 194, 231, 0.15),
+        transparent 70%
+    );
 
     top: -260px;
     right: -120px;
@@ -2068,90 +2063,84 @@ body {
 
 .footer-container {
     position: relative;
-
     z-index: 2;
 
     display: grid;
 
-    grid-template-columns:
-        1.5fr
-        1fr
-        1fr
-        1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
 
     gap: 60px;
 }
 
 
-/* ═════════════════════════════
-   BRAND
-═════════════════════════════ */
+/* BRAND */
 
 .footer-brand h2 {
     font-size: 42px;
-
     margin-bottom: 18px;
 
     font-family: 'Playfair Display', serif;
 
     color: #ffc2e7;
-
     letter-spacing: -1px;
 }
 
 .footer-brand p {
     max-width: 320px;
-
     line-height: 1.9;
 
     color: rgba(255,255,255,0.72);
 }
 
 
-/* ═════════════════════════════
-   COLUNAS
-═════════════════════════════ */
+/* COLUNAS */
 
 .footer-column h3 {
     font-size: 18px;
-
     margin-bottom: 24px;
 
     color: var(--blush);
-
     font-family: 'Playfair Display', serif;
 }
 
 .footer-column ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-column li {
     display: flex;
-
     align-items: center;
 
     gap: 12px;
 
     margin-bottom: 16px;
 
-    color: rgb(255, 255, 255);
-
+    color: #fff;
     line-height: 1.7;
+
+    font-size: 15px;
 }
 
+
+/* ÍCONES */
 .footer-column i {
     color: #ffc2e7;
 }
 
 
-/* ═════════════════════════════
-   REDES SOCIAIS
-═════════════════════════════ */
+/* LINKS (evita azul no mobile) */
+.footer-column a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+/* REDES SOCIAIS */
 
 .footer-socials {
     display: flex;
-
     gap: 16px;
 }
 
@@ -2162,9 +2151,7 @@ body {
     border-radius: 50%;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     text-decoration: none;
@@ -2175,66 +2162,54 @@ body {
 
     border: 1px solid rgba(255,255,255,0.08);
 
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .footer-socials a:hover {
-    transform:
-        translateY(-5px)
-        scale(1.06);
-
+    transform: translateY(-5px) scale(1.06);
     background: var(--muted);
-
 }
 
 
-/* ═════════════════════════════
-   FOOTER BOTTOM
-═════════════════════════════ */
+/* FOOTER BOTTOM */
 
 .footer-bottom {
     position: relative;
-
     z-index: 2;
 
     margin-top: 70px;
-
     padding-top: 28px;
 
-    border-top:
-        1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid rgba(255,255,255,0.08);
 
     text-align: center;
 }
 
 .footer-bottom p {
     color: rgba(255,255,255,0.5);
-
     font-size: 14px;
 }
 
 
-/* ═════════════════════════════
-   MOBILE
-═════════════════════════════ */
+/* ═════════ MOBILE ═════════ */
 
 @media (max-width: 960px) {
 
     .footer {
-        padding:
-            90px 28px 30px;
+        padding: 90px 28px 30px;
     }
 
     .footer-container {
         grid-template-columns: 1fr;
-
-        gap: 50px;
+        gap: 45px;
     }
 
     .footer-brand h2 {
         font-size: 34px;
+    }
+
+    .footer-column li {
+        font-size: 14px;
     }
 
 }
