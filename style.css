@@ -2253,4 +2253,5 @@ body {
 .btn-agende:hover {
   background: var(--blush);
   color: white;
+  border: 2px solid var(--gold-deep);
 }
